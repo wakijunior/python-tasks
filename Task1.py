@@ -1,10 +1,12 @@
-# TASK 1: Using Python or PHP or Java or Ruby or JavaScript
-# Write a program that prompts the user to enter the base and height of a triangle and
-# returns its area.
+# Write a program that prompts the user to enter the base and height of a triangle 
+# and returns its area. Once you learn functions,revisit this and write this code 
+# inside a function.
+base = float(input("Enter the base: "))
+height = float(input("Enter the height: "))
 
-base = float(input("Enter the base of the triangle: "))
-height = float(input("Enter the height of the triangle: "))
+area = 0.5 * base * height
 
-area = 1/2 * base * height
+print(f"the area of the triangle is {area}")
 
-print("The area of the triangle is: {area}Cm^2", )
+
+
