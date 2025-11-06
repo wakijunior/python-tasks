@@ -118,7 +118,7 @@ payee = get_payee(taxable_income)
 # Continue with the same program and calculate an individual’s Net Salary using:
 #  net_salary = gross_salary - (nhif + nhdf +  nssf + payee)
 
-def get_net_salary(x, y):
+def get_net_salary():
     x = gross_salary
     y = total_deductions + payee
     return x - y
@@ -127,10 +127,10 @@ net_salary = get_net_salary()
 
 
 print("Your gross salary is: ", gross_salary)
-print(nhif)
-print(nssf)
-print(nhdf)
-print(total_deductions)
+print("Your NHIF deductions amount to: ", nhif)
+print("Your NSSF deductions amount to: ", nssf)
+print("Your NHDF deductions amount to: ", nhdf)
+print("Your total deductions is: ", total_deductions)
 print("Your taxable income is: ", taxable_income)
-print(payee)
-print(net_salary)
+print("Your PAYEE is: ", payee)
+print("Your ner salary is: ", net_salary)
