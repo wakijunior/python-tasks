@@ -5,17 +5,16 @@
 
 # A > 79 , B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40
 
+maths = float(input("Enter your Score: "))
+eng = float(input("Enter your Score: "))
+swa = float(input("Enter your Score: "))
+sci = float(input("Enter your Score: "))
+sos = float(input("Enter your Score: "))
 
-
-def find_total_marks():
-    maths = float(input("Enter your Score: "))
-    eng = float(input("Enter your Score: "))
-    swa = float(input("Enter your Score: "))
-    sci = float(input("Enter your Score: "))
-    sos = float(input("Enter your Score: "))
-    x = maths + eng + swa + sci + sos
+def find_total_marks(a,b,c,d,e):
+    x = a + b + c + d + e 
     return x
-marks = find_total_marks()
+marks = find_total_marks(maths, eng, swa,sci, sos)
 print(marks)
 
 def average_marks():
